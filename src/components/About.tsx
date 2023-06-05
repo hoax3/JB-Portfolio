@@ -2,8 +2,9 @@ import { FaReact } from 'react-icons/fa'
 import { SiTypescript, SiPython, SiPostgresql, SiGo, SiDocker, SiSplunk, SiGit, SiKubernetes, SiTailwindcss } from 'react-icons/si'
 import { IconContext } from 'react-icons'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
-export const About = () => {
+export const About: React.FC = () => {
   const certs = [
     <Link to="https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html" target='_blank' style={{ textDecoration: 'none', color: 'inherit' }}>Splunk Consultant</Link>, 
     <Link to="https://elearnsecurity.com/product/ejpt-certification/"  style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>eJPT</Link>, 

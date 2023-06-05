@@ -1,11 +1,9 @@
-import './App.css'
-import { About } from './components/About'
-import { Intro } from './components/Intro'
-import Navbar from './components/Navbar'
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { NotFound } from './components/NotFound'
+import { About, Intro, Navbar, NotFound} from './components/Layout'
+import './App.css'
 
-function App() {
+const App: React.FC = () => {
 
   return (
     <>
