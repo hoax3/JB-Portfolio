@@ -4,5 +4,5 @@ Finally got around to making this. It took much longer than I initially thought.
 #### Technology
 
 Built with React TS using Vite. Hosting will be done on AWS and I will create a blog post soon walking through AWS Amplify. 
----
+
 ![image](/public/screenshot-page.png)
