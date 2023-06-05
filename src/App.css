@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,200&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;;
+}
+
+.navbar {
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #141414;
+  border-radius: 10px;
+  position: fixed;
+  width: 99%;
+  
+  padding: 0;
+  margin: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  @media screen and (max-width: 600px) {
+    width: 97%
+  }
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  @media screen and (max-width: 600px) {
+    padding: 14px 10px;
+    font-size: 14px
+  }
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.navbar la a:active {
+  text-decoration: underline;
+}
+
+.intro-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+}
+.intro-main h1 {
+  font-size: 75px;
+  width: 17.5ch;
+  overflow: hidden; 
+  border-right: 3px solid black; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 2.5s steps(17),
+    blink-caret .80s step-end infinite;
+  @media screen and (max-width: 600px) {
+      font-size: 40px;
+    }
+  }
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  20% { border-color: black; }
+}
+
+.intro-icons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.intro-icons li {
+  padding: 15px;
+}
+
+.intro-icons li a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 25px;
+}
+/* About Page Start */
+
+.about-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 6em;
+  @media screen and (max-width: 600px) {
+    width: 75%;
+  }
+}
+
+
+.certs-main button {
+  margin: 3px;
+}
+
+.certs-button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 15px;
+  border: 1.2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.certs-button:hover {
+  background-color: white;
+  color: black;
+
+}
+
