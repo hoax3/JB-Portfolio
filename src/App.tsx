@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { About, Intro, Navbar, NotFound, Projects, Posts, Contact} from './components/Layout'
+import { About, Intro, Navbar, NotFound, Projects, Posts} from './components/Layout'
 import './App.css'
 
 const App: React.FC = () => {
