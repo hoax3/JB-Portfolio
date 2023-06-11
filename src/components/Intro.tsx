@@ -1,8 +1,7 @@
 import { RiLinkedinLine, RiGithubLine, RiTwitterLine, RiMailLine, RiInstagramLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
-import React from 'react'
 
-export const Intro: React.FC = () => {
+export const Intro = () => {
     return (
         <div className='container'>
                 <div className="intro-main">

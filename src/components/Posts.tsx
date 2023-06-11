@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const Posts: React.FC = () => {
+export const Posts = () => {
   return (
     <div className='container'>
         <div className='posts-main'>

@@ -2,16 +2,14 @@ import { FaReact } from 'react-icons/fa'
 import { SiTypescript, SiPython, SiPostgresql, SiGo, SiDocker, SiSplunk, SiGit, SiKubernetes, SiTailwindcss } from 'react-icons/si'
 import { IconContext } from 'react-icons'
 import { Link } from 'react-router-dom'
-import React from 'react'
 
-export const About: React.FC = () => {
+export const About = () => {
   const certs = [
     <Link to="https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html" target='_blank' style={{ textDecoration: 'none', color: 'inherit' }}>Splunk Consultant</Link>, 
     <Link to="https://elearnsecurity.com/product/ejpt-certification/"  style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>eJPT</Link>, 
     <Link to="https://www.comptia.org/certifications/security"  style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>Security+</Link>,
     <Link to="https://www.comptia.org/certifications/cybersecurity-analyst"  style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>CySA+</Link>, 
     <Link to="https://www.comptia.org/certifications/pentest"  style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>PenTest+</Link>]
-  const certlist = certs.map((cert)=> <button type="button" className="certs-button">{cert}</button>)
   return (
     <div className='container' style={{overflowY:'auto'}}>
       <div className="about-main">
@@ -38,7 +36,9 @@ export const About: React.FC = () => {
                 </IconContext.Provider>
               </div>
             <h3>Certifications</h3>
-              <div className="certs-main">{certlist}</div> 
+              <div className="certs-main">
+              {certs.map((cert) => <button type="button" className="certs-button">{cert}</button>)}
+              </div> 
           </article>
       </div>
     </div>

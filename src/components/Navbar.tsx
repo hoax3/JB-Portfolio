@@ -1,7 +1,6 @@
 import { Link, Outlet } from "react-router-dom"
-import React from "react"
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
     return (
         <>
             <nav>

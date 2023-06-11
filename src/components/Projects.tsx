@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const Projects: React.FC = () => {
+export const Projects = () => {
   return (
     <div className='container'>
         <div className='projects-main'>
