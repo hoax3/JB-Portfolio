@@ -9,9 +9,9 @@ export const Navbar: React.FC = () => {
                     <li style={{float: 'left'}}>
                         <Link to={"/"}>[JB]</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to={"/contact"}>Contact</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to={"/posts"}>Posts</Link>
                     </li>
