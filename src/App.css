@@ -3,6 +3,7 @@
 
 * {
   font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -147,7 +148,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   font-size: 1rem;
@@ -161,7 +162,7 @@ body {
   background-color: black;
   color: white;
   border-radius: 3px;
-  padding: 10px 10px;
+  padding: 5px 5px;
   border: 1.2px solid black;
   font-size: .6em;
 }
@@ -199,6 +200,7 @@ body {
   text-decoration: none;
   @media screen and (max-width: 600px) {
     grid-template-columns: auto;
+    justify-items: center;
   }
 }
 
@@ -241,7 +243,7 @@ body {
 .posts-main {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 80%;
   font-size: 1rem;
   @media screen and (max-width: 600px) {
     width: 85%;
