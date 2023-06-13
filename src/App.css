@@ -151,11 +151,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 1rem;
-  @media screen and (max-width: 400px) {
-   flex-direction: column;
-   font-size: 1em;
-   width: 30%
-  }
 }
 
 .certs-main button {
@@ -202,6 +197,9 @@ body {
   gap: 10px;
   align-items: flex-start ;
   text-decoration: none;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: auto;
+  }
 }
 
 .projects-card-main a {
@@ -260,6 +258,10 @@ body {
   margin: 5px;
   gap: 10px;
   align-items: flex-start ;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
 }
 
 .posts-card-main a {
