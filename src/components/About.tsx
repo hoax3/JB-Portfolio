@@ -18,11 +18,13 @@ export const About = () => {
           </h1>
           <article>
             <h3>About Me</h3>
-              <p>Just another nerd in the world who wants to help other nerds become more nerdy. Currently a Cloud Security Engineer focusing on CSPM across AWS, Azure, and GCP. I have worked as a SOC analyst, security engineer, and Splunk consultant. Always ready to take on new challenges. </p>
+              <p>Just another nerd in the world who wants to help other nerds become more nerdy.</p> 
+              <p>I currently am a Cloud Security Engineer focusing on CSPM across AWS, Azure, and GCP. I have worked as a SOC analyst, security engineer, and Splunk consultant.</p>
+              <p>I'm always ready to take on new challenges. </p>
             <h3>Skills</h3>
               <div style={{
                 display:'grid', gridTemplateColumns:'auto auto auto auto auto', gap:'20px'}}>
-                <IconContext.Provider value={{color:'black', size:'1.4em'}}>
+                <IconContext.Provider value={{color:'black', size:'2em'}}>
                   <FaReact />
                   <SiTypescript />
                   <SiTailwindcss />

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Raleway', sans-serif;
 }
 body {
   width: 100%;
@@ -55,8 +56,8 @@ body {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 25px;
-  font-size: 1.4em;
+  padding: 14px 35px;
+  font-size: 1em;
   @media screen and (max-width: 600px) {
     padding: 14px 10px;
     font-size: 1em
@@ -86,14 +87,14 @@ body {
 }
 .intro-main h1 {
   font-size: 75px;
-  width: 18ch;
+  width: 12ch;
   overflow: hidden; 
   border-right: 3px solid black; 
   white-space: nowrap; 
   margin: 0 auto; 
-  letter-spacing: .15em; 
+  letter-spacing: .12em; 
   animation: 
-    typing 2.5s steps(17),
+    typing 2.5s steps(18),
     blink-caret .80s step-end infinite;
   @media screen and (max-width: 1100px) {
       font-size: 30px;
@@ -106,7 +107,7 @@ body {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  20% { border-color: black; }
+  20%{ border-color: black; }
 }
 
 .intro-icons {
@@ -134,11 +135,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   overflow-y:auto;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 600px) {
     width: 85%;
-    font-size: 1.3em
+    font-size: .8em
   }
 }
 
@@ -146,25 +147,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (max-width: 1300px) {
+  font-size: 1rem;
+  @media screen and (max-width: 400px) {
    flex-direction: column;
-   font-size: 1.2em;
-   width: 60%
+   font-size: 1em;
+   width: 30%
   }
 }
 
 .certs-main button {
-  margin: 3px;
+  margin: 2px;
 }
 
 .certs-button {
   background-color: black;
   color: white;
   border-radius: 3px;
-  padding: 4px 15px;
+  padding: 10px 10px;
   border: 1.2px solid black;
   font-size: .6em;
 }
@@ -176,26 +178,121 @@ body {
 
 }
 
+/* Projects Page */
+
 .projects-main {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   overflow-y:auto;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 600px) {
     width: 85%;
-    font-size: 1.3em
+    font-size: .8em
   }
 }
+
+.projects-card-main {
+  padding: 10px;
+  display: grid;
+  overflow-y:auto;
+  grid-template-columns: auto auto;
+  height: 60vh;
+  margin: 5px;
+  gap: 10px;
+  align-items: flex-start ;
+  text-decoration: none;
+}
+
+.projects-card-main a {
+  text-decoration: none;
+}
+
+.projects-card {
+  box-sizing: border-box;
+  width: 190px;
+  height: 290px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid black;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.projects-card:hover {
+  /* border: .1px solid black; */
+  transform: scale(1.05);
+}
+
+.projects-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+/* Posts Page */
 
 .posts-main {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  font-size: 1.5rem;
-  overflow-y:auto;
-  @media screen and (max-width: 900px) {
+  font-size: 1rem;
+  @media screen and (max-width: 600px) {
     width: 85%;
-    font-size: 1.3em
+    font-size: .9em
   }
+}
+
+.posts-card-main {
+  padding: 10px;
+  display: grid;
+  overflow-y:auto;
+  grid-template-columns: auto auto auto;
+  height: 60vh;
+  margin: 5px;
+  gap: 10px;
+  align-items: flex-start ;
+}
+
+.posts-card-main a {
+  text-decoration: none;
+}
+
+.posts-card {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 190px;
+  height: 290px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid black;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.posts-card:hover {
+  /* border: .1px solid black; */
+  transform: scale(1.05);
+}
+
+.posts-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
 }

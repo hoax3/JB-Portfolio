@@ -6,7 +6,7 @@ export const Intro = () => {
         <div className='container'>
                 <div className="intro-main">
                     <h1>Hi, I'm Justin </h1>
-                    <h3>[Engineer | Developer | Tinkerer]</h3>
+                    <h3>[ Engineer | Developer | Tinkerer ]</h3>
                 <div>
                     <ul className="intro-icons">
                         <li>
