@@ -1,5 +1,6 @@
 import { RiLinkedinLine, RiGithubLine, RiTwitterLine, RiMailLine, RiInstagramLine } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
+import './styles/intro.css'
 
 export const Intro = () => {
     return (

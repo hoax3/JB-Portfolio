@@ -1,0 +1,49 @@
+/* navbar css */
+
+.navbar {
+  overflow: hidden;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 5px;
+  position: fixed;
+  width: 99%;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 35px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.navbar li a:active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {  
+    width: 97%
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar li a {
+    padding: 14px 10px;
+    font-size: 1em
+  }
+}
