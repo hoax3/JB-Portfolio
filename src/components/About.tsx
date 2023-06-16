@@ -6,9 +6,9 @@ import './styles/about.css'
 
 export const About = () => {
   const certs = [
-    <Link to="https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html" target='_blank' style={{ textDecoration: 'none', color: 'inherit' }}>Splunk Consultant</Link>,
-    <Link to="https://elearnsecurity.com/product/ejpt-certification/" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>eJPT</Link>,
+    <Link to="https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html" target='_blank' style={{ textDecoration: 'none', color: 'inherit' }}>Splunk Certified Consultant</Link>,
     <Link to="https://www.comptia.org/certifications/security" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>Security+</Link>,
+    <Link to="https://elearnsecurity.com/product/ejpt-certification/" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>eJPT</Link>,
     <Link to="https://www.comptia.org/certifications/cybersecurity-analyst" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>CySA+</Link>,
     <Link to="https://www.comptia.org/certifications/pentest" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>PenTest+</Link>]
   return (
