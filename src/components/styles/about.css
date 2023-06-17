@@ -3,7 +3,8 @@
   margin-right: auto;
   width: 90%;
   font-size: 1rem;
-  overflow-y:auto;
+  overflow-y: auto;
+  overflow: hidden;
 }
 
 .about-main h1 {

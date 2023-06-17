@@ -12,7 +12,7 @@ export const About = () => {
     <Link to="https://www.comptia.org/certifications/cybersecurity-analyst" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>CySA+</Link>,
     <Link to="https://www.comptia.org/certifications/pentest" style={{ textDecoration: 'none', color: 'inherit' }} target='_blank'>PenTest+</Link>]
   return (
-    <div className='container' style={{ overflowY: 'auto' }}>
+    <div className='container'>
       <div className="about-main">
         <h1>
           Justin Begley
