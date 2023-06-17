@@ -107,6 +107,10 @@
    .about-main {
       width: 85%;
   }
+  .certs-card-main {
+    grid-template-columns: auto;
+    margin: 5px;
+  }
 }
 
 @media screen and (max-width: 680px) {
