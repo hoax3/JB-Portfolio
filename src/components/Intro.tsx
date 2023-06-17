@@ -28,7 +28,7 @@ export const Intro = () => {
           </ul>
         </div>
         <div className='quick-about'>
-          <Link to={"/about"}>Click here to know more &gt;&gt;</Link>
+          <Link to={"/about"}>Click to know more &gt;&gt;</Link>
         </div>
       </div>
     </div>
