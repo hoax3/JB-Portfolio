@@ -9,15 +9,15 @@
   
 .intro-main h1 {
   font-size: 75px;
-  width: 12ch;
+  width: 12.1ch;
   overflow: hidden; 
   border-right: 3px solid black; 
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .12em; 
   animation: 
-    typing 2.5s steps(18),
-    blink-caret .80s step-end infinite;
+    typing 1.5s steps(12),
+    blink-caret .7s step-end infinite;
 }
   
 @keyframes typing {
@@ -44,6 +44,17 @@
     text-decoration: none;
     color: #141414;
     font-size: 25px;
+}
+
+.quick-about a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {opacity: 0;}
 }
   
 @media screen and (max-width: 900px) {
