@@ -25,16 +25,16 @@ export const About = () => {
           <h3>Skills</h3>
           <div className='icon-grid'>
             <IconContext.Provider value={{ color: 'black', size: '2em', className: 'icon-provider' }}>
-              <FaReact />
-              <SiTypescript />
-              <SiTailwindcss />
-              <SiPython />
-              <SiGo />
-              <SiGit />
-              <SiPostgresql />
-              <SiDocker />
-              <SiKubernetes />
-              <SiSplunk />
+              <FaReact title='React'/>
+              <SiTypescript title='TypeScript'/>
+              <SiTailwindcss title='Tailwinds CSS'/>
+              <SiPython title='Python'/>
+              <SiGo title='Go'/>
+              <SiGit title='Git'/>
+              <SiPostgresql title='Git'/>
+              <SiDocker title='Docker'/>
+              <SiKubernetes title='Kubernetes'/>
+              <SiSplunk title='Splunk'/>
             </IconContext.Provider>
           </div>
           <h3>Certifications</h3>

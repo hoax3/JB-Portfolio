@@ -54,6 +54,7 @@
 
 .quick-about {
   padding-top: 1.5em;
+  animation: fade-in 10s ease-in;
   transition: 300ms ease-out;
 }
 
@@ -62,10 +63,19 @@
   color: black;
   font-size: 18px;
   animation: blinker 2s linear infinite;
+  animation-delay: 9s;
+}
+
+.quick-about a:hover {
+  animation: none;
 }
 
 @keyframes blinker {
   50% {opacity: 0;}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
 }
 
 .quick-about:hover {
