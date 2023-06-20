@@ -20,9 +20,8 @@
 
 .icon-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, 130px);
   padding: 10px;
-  gap: 20px;
 }
 
 .icon-provider {
@@ -36,7 +35,7 @@
   justify-content: space-between;
   width: 90%;
   margin-left: auto;
-  margin-right: auto;
+  margin-rignht: auto;
   font-size: 1rem;
 }
 
@@ -116,9 +115,7 @@
     margin: 5px;
   }
   .icon-grid {
-    grid-template-columns: auto auto auto;
-    gap: 3px;
-    margin: 12px;
+    grid-template-columns: repeat(auto-fill,60px);
   }
 }
 
@@ -127,7 +124,8 @@
     grid-template-columns: auto auto auto;
   }
   .icon-grid {
-  grid-template-columns: auto auto auto;
+  /*grid-template-columns: auto auto auto;*/
+    grid-template-columns: repeat(auto-fill, 75px);
   gap: 1px;
   }
 }
@@ -137,6 +135,7 @@
     grid-template-columns: auto auto auto auto ;
   }
   .icon-grid {
-    grid-template-columns: auto auto auto auto;
+    /*grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fill, 100px);
   }
 }
